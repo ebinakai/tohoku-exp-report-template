@@ -99,8 +99,13 @@
 \captionsetup[subtable]{labelformat=simple}
 \renewcommand*{\thesubtable}{(\alph{subtable})}
 
-% ブラケット付き単位の設定
-\NewDocumentCommand{\sibr}{m}{\,\text{[\si{#1}]}}
+% 単位の設定
+\sisetup{
+  detect-all,
+  per-mode = symbol,
+  range-phrase = --,
+}
+\NewDocumentCommand{\sibr}{m}{\,\text{[\si{#1}]}} 
 
 % ソースコード用の設定
 \lstset{
