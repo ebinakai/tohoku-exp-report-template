@@ -163,10 +163,10 @@
 
 % 雑誌論文フォーマット
 \DeclareBibliographyDriver{article}{%
-  \printnames{author}：“%
-  \printfield{title}，”\ %
+  \printnames{author}：%
+  \printfield{title}，%
   \printfield{journaltitle}，%
-  \printfield{volume}，%
+  Vol.\printfield{volume}，%
   \printfield{pages}(\printfield{year})%
   \finentry
 }
