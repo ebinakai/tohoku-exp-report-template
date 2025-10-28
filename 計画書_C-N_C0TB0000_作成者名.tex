@@ -182,8 +182,99 @@
 
 \begin{document}
 
-% 表紙（wordから出力した表紙をcover/CN.pdfに保存）
-\includepdf[pages=1]{cover/CN.pdf}
+\begin{titlepage}
+  \noindent
+  \begin{center}
+
+    \fontsize{18pt}{18pt}\selectfont
+    学生実験C レポート
+  \end{center}
+
+  \vspace{0.8cm}
+
+  \fontsize{10.5pt}{10.5pt}\selectfont
+  \underline{\makebox[0.96\textwidth][l]{実験題目 : }}
+
+  \vspace{0.8cm}
+
+  \fontsize{10.5pt}{10.5pt}\selectfont
+  \underline{\makebox[0.45\textwidth][l]{学籍番号 : }}
+  \hspace{0.04\textwidth}
+  \underline{\makebox[0.45\textwidth][l]{氏名 : }}
+
+  \vspace{0.8cm}
+
+  \fontsize{10.5pt}{10.5pt}\selectfont
+  \underline{\makebox[0.2\textwidth][r]{ \hspace{0.2cm} コース}}
+  \hspace{0.1\textwidth}
+  \underline{\makebox[0.2\textwidth][r]{ \hspace{1cm}班}}
+  \hspace{0.1\textwidth}
+  \underline{\makebox[0.34\textwidth][l]{提出日 \today}}
+
+  \vspace{0.8cm}
+
+  \fontsize{10.5pt}{10.5pt}\selectfont
+  \underline{\makebox[0.4\textwidth][l]{共同実験者名 : }}
+  \hspace{0.04\textwidth}
+  \underline{\makebox[0.22\textwidth][c]{}}
+  \hspace{0.04\textwidth}
+  \underline{\makebox[0.22\textwidth][c]{}}
+
+  \vspace{0.8cm}
+
+  \fontsize{10.5pt}{10.5pt}\selectfont
+  \begin{center}
+    \textgt{チェックリスト（チェックした項目の□を\checkmark に変えながら，確認すること）}
+  \end{center}
+
+  \fontsize{10.5pt}{13.5pt}\selectfont
+  \textgt{書 \space 式}
+  \begin{description}
+    \setlength{\parskip}{0.1cm}
+    \setlength{\itemsep}{0.1cm}
+    \item[\hspace{0.7cm}\checkmark]  グラフ，プログラムリスト，表，写真以外の部分は丁寧に書かれているか．
+    \item[\hspace{0.7cm}\checkmark]  実験計画書，目的，概要(原理・方法)，結果，考察，まとめ，参考文献の順にまとめているか.
+    \item[\hspace{0.7cm}\checkmark]  実験指針を丸写しせず，自分の言葉も含めてまとめてあるか．
+    \item[\hspace{0.7cm}\checkmark]  実験結果，および考察（検討）は過去形で記してあるか．また，普遍的な内容は現在形で記してあるか．
+    \item[\hspace{0.7cm}\checkmark]  実験指針に記載されている考察の項目にすべて回答しているか．
+    \item[\hspace{0.7cm}\checkmark]  引用箇所を明示し，参考文献リストと対応づけているか．
+    \item[\hspace{0.7cm}\checkmark]  参考文献リストは，以下のフォーマットで記してあるか．
+      \begin{description}
+        \setlength{\parskip}{0.05cm}
+        \setlength{\itemsep}{0.05cm}
+        \fontsize{10pt}{14pt}\selectfont
+        \item[\hspace{0.4cm}○] 論文誌などを引用する場合：
+
+        \fontsize{9pt}{12pt}\selectfont
+        [1] 著者名，"標題，"　雑誌名，巻，号，pp.を付けて始め－終りのページ，月年．
+
+        \fontsize{10pt}{14pt}\selectfont
+        \item[\hspace{0.4cm}○] 著書，編書を引用する場合：
+        
+        \fontsize{9pt}{12pt}\selectfont
+        [2] 著者名，書名，編者名，発行所，発行年．
+
+        \fontsize{10pt}{14pt}\selectfont
+        \item[\hspace{0.4cm}○] 著書の一部を引用する場合：　
+        
+        \fontsize{9pt}{12pt}\selectfont
+        [3] 著者名，"標題，" 書名，編者名，章番号またはpp.を付けて始め－終りのページ，発行所，発行年．
+      \end{description}
+  \end{description}
+
+  \textgt{図 \space ・ \space 表}
+  \begin{description}
+    \setlength{\parskip}{0.1cm}
+    \setlength{\itemsep}{0.1cm}
+    \item[\hspace{0.7cm}\checkmark]  グラフには横軸，縦軸のラベル（変数名と単位）を記しているか．
+    \item[\hspace{0.7cm}\checkmark]  横向きのグラフがある場合，グラフの上側が綴じしろ側になるように描いているか
+    \item[\hspace{0.7cm}\checkmark]  図や表には，図１，表１のような番号づけをしているか．
+    \item[\hspace{0.7cm}\checkmark]  「単位」が正しくSI単位系で記載されているか．
+    \item[\hspace{0.7cm}\checkmark]  図の説明文は図の下側に，表の説明文は表の上側に記しているか．
+    \item[\hspace{0.7cm}\checkmark]  グラフの表現方法は適切か（不適切な曲線補間をしていないか，グラフと記録条件の対応がわかるようにしてあるか等）．
+    \item[\hspace{0.7cm}\checkmark]  本文で図や表について説明をしているか．
+  \end{description}
+\end{titlepage}
 
 \section{実験の目的}
 本実験の目的をここに記述する．
