@@ -3,11 +3,6 @@
 \setpagelayout{noheadfoot,top=1cm,bottom=1cm,left=2cm,right=2cm}
 \setlength{\footskip}{6mm}
 
-% タイトル情報（必要に応じて編集）
-\title{実験レポートタイトル}
-\author{作成者名}
-\date{\today}
-
 % パッケージ類
 \usepackage{graphicx}   % 画像を挿入するため
 \usepackage{amsmath}    % 数式を使うため
@@ -26,6 +21,12 @@
 \usepackage{makecell}   % 表のセルを結合するため
 \usepackage{ascmac}     % 図の枠を作成するため
 \usepackage{listings}   % ソースコードの表示
+\usepackage{titling}    % タイトルページのカスタマイズ
+
+% タイトル情報（必要に応じて編集）
+\title{実験レポートタイトル}
+\author{作成者名}
+\date{\today}
 
 % フォント
 \setmainjfont{IPAexMincho} 
@@ -193,7 +194,7 @@
   \vspace{0.8cm}
 
   \fontsize{10.5pt}{10.5pt}\selectfont
-  \underline{\makebox[0.96\textwidth][l]{実験題目 : }}
+  \underline{\makebox[0.96\textwidth][l]{実験題目 : \thetitle}}
 
   \vspace{0.8cm}
 
