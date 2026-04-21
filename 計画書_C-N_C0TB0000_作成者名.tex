@@ -147,11 +147,11 @@
 \DeclareFieldFormat{title}{#1}
 \DeclareFieldFormat{journaltitle}{#1}
 \renewcommand*{\newunitpunct}{，}
-\DeclareCiteCommand{\cite}
-  {\usebibmacro{prenote}}
-  {\mkbibsuperscript{[\printfield{labelnumber}]}}
+\DeclareCiteCommand{\cite}[\mkbibsuperscript]
+  {\bibopenbracket\usebibmacro{prenote}}
+  {\printfield{labelnumber}}
   {\multicitedelim}
-  {\usebibmacro{postnote}}
+  {\usebibmacro{postnote}\bibclosebracket}
 
 % 書籍フォーマット
 \DeclareBibliographyDriver{book}{%
